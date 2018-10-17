@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.allanakshay.donboscoyouth.AboutUs"
+    tools:showIn="@layout/activity_about_us"
+    android:background="@color/black_overlay">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/aboutus_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+   <ImageView
+       android:layout_marginTop="10dp"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:src="@drawable/dby_logo"
+       android:id="@+id/imageyouth"
+       android:layout_centerHorizontal="true"
+       android:padding="10dp"/>
+    <TextView
+        android:layout_below="@id/imageyouth"
+        android:padding="30dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_overlay"
+        android:text="\t\t\tWe, The Don Bosco Youth, are a group of youngsters who dedicate ourselves to do good in the name of our Lord. Apart from this, we conduct many events in our own Parish. Some of them are :- \n1. Bosco Bible Camp\n2. Youth Camp\nand many more......\n\t\t\tWe even take part in Inter - Parish competitions and we're proud to say that we've won many awards.\n\t\t\tSo, do join us if you're interested....... You'll definitely reap the benefits!!\n\n\t\t\tWe meet up every Sunday at 10 am to discuss upon various events and receive informative sessions on various aspects of our lives." />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

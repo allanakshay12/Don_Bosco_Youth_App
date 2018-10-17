@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Don Bosco Youth</string>
+    <string name="title_activity_main_page">Main Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">About Us</string>
+    <string name="title_activity_know_group">Know Your Group</string>
+    <string name="title_activity_attendance">Attendance</string>
+    <string name="title_activity_upcoming_events">Upcoming Events</string>
+    <string name="title_activity_photo_gallery">Photo Gallery</string>
+    <string name="title_activity_join_us">Join Us</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="title_activity_important_notice">Important Notices</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_finance">Finance</string>
+    <string name="title_activity_mom">Minutes of Meeting</string>
+    <string name="title_activity_admin__page">Admin Page</string>
+    <string name="title_activity_admin__finance">Add Finance</string>
+    <string name="title_activity_admin_mom">Add Minutes of Meeting</string>
+    <string name="title_activity_admin_upcoming"> Add Event</string>
+    <string name="title_activity_admin_member">Add Member</string>
+    <string name="title_activity_admin__attendance">Attendance Update</string>
+    <string name="facebook_app_id">113799115911208</string>
+    <string name="fb_login_protocol_scheme">fb113799115911208</string>
+    <string name="title_activity_fb__link">Facebook Linking</string>
+    <string name="title_activity_admin__update__members">Update Members</string>
+    <string name="title_activity_admin__update__events">Update Events</string>
+    <string name="title_activity_admin__update__mom">Update Minutes of Meeting</string>
+    <string name="title_activity_admin__update__finance">Update Finance</string>
+    <string name="title_activity_youthmember_update_edit">Edit Member</string>
+    <string name="title_activity_upcoming__events__update__edit">Edit Event</string>
+    <string name="title_activity_mom__update__edit">Edit Minutes of Meeting</string>
+    <string name="title_activity_finance__update__edit">Edit Finance</string>
+    <string name="title_activity_admin__update__plans">Upcoming Plans</string>
+    <string name="title_activity_admin__plan">Add Plan</string>
+    <string name="title_activity_plan_update_edit">Edit Plan</string>
+    <string name="title_activity_push__notification">Push Notification</string>
+    <string name="title_activity_profile__pic">Update Profile Picture</string>
+    <string name="title_activity_my__profile">My Profile</string>
+
+</resources>

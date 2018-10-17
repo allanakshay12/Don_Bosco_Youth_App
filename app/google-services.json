@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "368645022298",
+    "firebase_url": "https://donboscoyouth-24000.firebaseio.com",
+    "project_id": "donboscoyouth-24000",
+    "storage_bucket": "donboscoyouth-24000.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368645022298:android:c3489ad1caf4bfc6",
+        "android_client_info": {
+          "package_name": "com.allanakshay.donboscoyouth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368645022298-uqpl6kj2b8es5b6ljqlam016kfg44f1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.allanakshay.donboscoyouth",
+            "certificate_hash": "40174da76f1d5341df3eb780d1dd508530569385"
+          }
+        },
+        {
+          "client_id": "368645022298-a8penongg09coar45dij7pri4oitbpkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCORpNUA53n3bBm5SKxlLAGwtblkhHRIjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368645022298-a8penongg09coar45dij7pri4oitbpkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

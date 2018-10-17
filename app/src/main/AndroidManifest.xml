@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.allanakshay.donboscoyouth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".DonBoscoYouth2"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".NotificationServiceDBY"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationHandle"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".TokenRefreshApp">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CoverPage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.allanakshay.donboscoyouth.LoginPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPage"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_main_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.allanakshay.donboscoyouth.MainPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".KnowGroup"
+            android:label="@string/title_activity_know_group"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".Attendance"
+            android:label="@string/title_activity_attendance"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".UpcomingEvents"
+            android:label="@string/title_activity_upcoming_events"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".PhotoGallery"
+            android:label="@string/title_activity_photo_gallery"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JoinUs"
+            android:label="@string/title_activity_join_us"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity android:name=".Update" />
+        <activity
+            android:name=".ImportantNotice"
+            android:label="@string/title_activity_important_notice"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".Finance"
+            android:label="@string/title_activity_finance"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".MOM"
+            android:label="@string/title_activity_mom"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+        <activity
+            android:name=".Admin_Page"
+            android:label="@string/title_activity_admin__page"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Finance"
+            android:label="@string/title_activity_admin__finance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin_mom"
+            android:label="@string/title_activity_admin_mom"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_upcoming"
+            android:label="@string/title_activity_admin_upcoming"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_member"
+            android:label="@string/title_activity_admin_member"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Attendance"
+            android:label="@string/title_activity_admin__attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FB_Link"
+            android:label="@string/title_activity_fb__link"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Update_Members"
+            android:label="@string/title_activity_admin__update__members"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Update_Events"
+            android:label="@string/title_activity_admin__update__events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Update_MOM"
+            android:label="@string/title_activity_admin__update__mom"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Update_Finance"
+            android:label="@string/title_activity_admin__update__finance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Youthmember_update_edit"
+            android:label="@string/title_activity_youthmember_update_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Upcoming_Events_Update_Edit"
+            android:label="@string/title_activity_upcoming__events__update__edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MOM_Update_Edit"
+            android:label="@string/title_activity_mom__update__edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Finance_Update_Edit"
+            android:label="@string/title_activity_finance__update__edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Update_Plans"
+            android:label="@string/title_activity_admin__update__plans"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin_Plan"
+            android:label="@string/title_activity_admin__plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Plan_update_edit"
+            android:label="@string/title_activity_plan_update_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Push_Notification"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_push__notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile_Pic"
+            android:label="@string/title_activity_profile__pic"
+            android:parentActivityName=".My_Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.allanakshay.donboscoyouth.My_Profile" />
+        </activity>
+        <activity
+            android:name=".My_Profile"
+            android:label="@string/title_activity_my__profile"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.allanakshay.donboscoyouth.MainPage" />
+        </activity>
+    </application>
+
+</manifest>

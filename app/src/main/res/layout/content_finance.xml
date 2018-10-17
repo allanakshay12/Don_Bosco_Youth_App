@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.allanakshay.donboscoyouth.Finance"
+    android:background="@color/black_overlay"
+    tools:showIn="@layout/app_bar_finance">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:id="@+id/finance_listview"
+        android:layout_above="@+id/finance_balance"
+        android:divider="@color/black_overlay"
+        android:dividerHeight="5dp">
+    </ListView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Balance : Rs. "
+        android:background="@color/balance"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:id="@+id/finance_balance"/>
+
+</RelativeLayout>
+
+

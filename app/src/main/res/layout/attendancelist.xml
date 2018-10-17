@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black_overlay"
+        android:id="@+id/attendancenameview"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_below="@id/attendancenameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance:"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/attendancenumberview"
+        android:padding="10dp"/>
+
+    <Button
+    android:layout_width="26dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/attendance_add"
+    android:drawableLeft="@drawable/ic_exposure_plus_1_black_24dp"
+    android:drawablePadding="10dp"
+    android:layout_marginTop="20dp"
+    android:textStyle="bold"
+    android:layout_marginRight="10dp"
+    android:textColor="@color/background"
+    android:id="@+id/attendanceadd"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true" />
+
+    <Button
+        android:layout_width="26dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/attendance_add"
+        android:drawableLeft="@drawable/minus_one"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="56dp"
+        android:textColor="@color/background"
+        android:id="@+id/attendancesubtract"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

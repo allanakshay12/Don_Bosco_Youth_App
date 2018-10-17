@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black_overlay">
+    <Button
+        android:layout_width="1dp"
+        android:background="@color/black_overlay"
+        android:layout_marginTop="55dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/center"/>
+
+    <Button
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center"
+        android:text="  Important Notices  "
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/background"
+        android:id="@+id/importantnotice"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Update App"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/center"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/background"
+        android:id="@+id/update"/>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/importantnotice"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black_overlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.allanakshay.donboscoyouth.MainPage"
+    tools:showIn="@layout/app_bar_main_page"
+    android:background="@color/black_overlay">
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/upcoming_events_homepage"
+        android:text="Upcoming Events"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/upcomingevents"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/upcomingevents"
+        android:layout_height="170dp"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@drawable/know_your_group_homepage"
+        android:text="Know your group"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/knowyourgroup"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/knowyourgroup"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@drawable/attendance_homepage"
+        android:text="Know Your Attendance"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/attendance"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/attendance"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@drawable/finance_homepage"
+        android:text="Finance"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/finance"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/finance"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@drawable/mom_homepage"
+        android:text="Minutes of Meeting"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/mom"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/mom"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@drawable/photo_homepage"
+        android:text="Photo Gallery"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/photogallery"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/photogallery"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:background="@drawable/admin_homepage"
+        android:text="Admin Page"
+        android:textColor="@color/background"
+        android:textStyle="bold"
+        android:id="@+id/adminpage"/>
+</RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

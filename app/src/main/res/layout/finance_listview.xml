@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finance_month"
+        android:textColor="@color/black_overlay"
+        android:text="Month"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finance_amount"
+        android:textColor="@color/black_overlay"
+        android:text="Rs. "
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:padding="3dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finance_type"
+        android:textColor="#0171fa"
+        android:text="Type : "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:padding="3dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finance_desc"
+        android:textColor="#bf00ff"
+        android:text="Description : "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:padding="3dp"/>
+</LinearLayout>

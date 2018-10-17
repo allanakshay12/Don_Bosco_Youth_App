@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_overlay">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.allanakshay.donboscoyouth.My_Profile"
+    tools:showIn="@layout/activity_my__profile"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        android:padding="10dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:civ_border_color="@color/black_overlay"
+        app:civ_border_width="3dp"
+        android:padding="10dp"
+        android:src="@drawable/transparent_background"
+        android:id="@+id/profile_pic_myprofile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic_myprofile"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/edit"
+            android:text="Change Profile Picture"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/black_overlay"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:id="@+id/change_myprofile"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/name_myprofile"
+            android:layout_below="@id/change_myprofile">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:enabled="false"
+                android:id="@+id/myprofile_member_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/name_myprofile"
+            android:id="@+id/phonenumber_myprofile">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:enabled="false"
+                android:id="@+id/myprofile_member_number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phonenumber_myprofile"
+            android:id="@+id/username_myprofile"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="App Username"
+                android:enabled="false"
+                android:id="@+id/myprofile_member_username" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_myprofile"
+            android:id="@+id/password_myprofile"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="App Password"
+                android:enabled="false"
+                android:id="@+id/myprofile_member_password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:layout_below="@id/password_myprofile"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:id="@+id/dobtv_myprofile"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dobtv_myprofile"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/myprofile_member_date"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/myprofile_member_date"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/myprofile_member_month"
+            android:spinnerMode="dropdown"></Spinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occupation"
+            android:layout_below="@id/myprofile_member_date"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:id="@+id/occutv_myprofile"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/occutv_myprofile"
+            android:id="@+id/myprofile_member_occu"
+            android:spinnerMode="dropdown"></Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/myprofile_member_occu"
+            android:text="Edit Profile"
+            android:textStyle="bold"
+            android:textColor="@color/background"
+            android:background="@drawable/roundedgebutton"
+            android:id="@+id/myprofile_updatedetails"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_myprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:visibility="visible"
+            app:indicatorName="BallClipRotatePulseIndicator"
+            app:indicatorColor="@color/colorPrimaryDark"
+            />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+
+    </ScrollView>

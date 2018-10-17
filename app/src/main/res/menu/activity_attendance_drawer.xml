@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/upcomingevents3"
+            android:icon="@drawable/ic_attendance"
+            android:title="Upcoming Events" />
+        <item
+            android:id="@+id/knowyourgroup3"
+            android:icon="@drawable/ic_know_group"
+            android:title="Know Your Group" />
+        <item
+            android:id="@+id/attendance3"
+            android:icon="@drawable/ic_upcoming_event"
+            android:title="Know Your Attendance" />
+        <item
+            android:id="@+id/photogallery3"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Photo Gallery" />
+        <item
+            android:id="@+id/finance3"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Finance" />
+
+        <item
+            android:id="@+id/mom3"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="Minutes of Meeting" />
+    </group>
+
+    <item android:title="User Account">
+        <menu>
+
+            <item
+                android:id="@+id/myprofile_drawer3"
+                android:icon="@drawable/my_profile"
+                android:title="My Profile" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/join3"
+                android:icon="@drawable/ic_person_add_black_24dp"
+                android:title="Join Us" />
+            <item
+                android:id="@+id/feedback3"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>
