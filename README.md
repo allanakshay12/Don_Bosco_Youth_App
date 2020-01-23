@@ -12,5 +12,6 @@ An Android App to maintain ﬁnancial records, attendance records, event records
 * Ability to check the details of the youth group members and their contact details
 * Profile Management
 * Ability to check the group's finances
+* Ability to check the group's attendance
 * Ability to check the group's MOM/s(Minutes of Meeting/s)
 * Admin Capabilty to update the database via the app
